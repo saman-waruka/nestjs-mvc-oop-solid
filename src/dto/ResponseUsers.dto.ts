@@ -1,8 +1,8 @@
 import { UserDTO } from './User.dto'
 export class ResponseUsersDTO {
-  total_count: number;
-  incomplete_results: boolean;
-  items: UserDTO[];
+  protected total_count: number;
+  protected incomplete_results: boolean;
+  protected items: UserDTO[];
   constructor(data: ResponseUsersDTO){
     const { total_count, incomplete_results, items  } = data
     this.total_count = total_count;
